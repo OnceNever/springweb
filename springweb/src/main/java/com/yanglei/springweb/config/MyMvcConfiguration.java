@@ -11,7 +11,8 @@ public class MyMvcConfiguration implements WebMvcConfigurer {
     //视图跳转
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/yang").setViewName("test");
+        registry.addViewController("/").setViewName("index");
+        registry.addViewController("/index.html").setViewName("index");
     }
 }
 
