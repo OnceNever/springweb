@@ -1,11 +1,14 @@
 package com.yanglei.springweb.dao;
 
 import com.yanglei.springweb.pojo.Department;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+@Repository
 public class DepartmentDao {
 
     private static Map<Integer, Department> departments = null;
