@@ -22,4 +22,11 @@ public class LoginController {
             return "index";
         }
     }
+
+    @RequestMapping("/logout")
+    public String logout(HttpSession session){
+        session.invalidate();
+        return "redirect:/index";
+    }
+
 }

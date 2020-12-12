@@ -5,3 +5,7 @@ spring:
 #国际化
   messages:
     basename: i18n/login
+#修改默认时间格式
+  mvc:
+    format:
+      date: yyyy-MM-dd
